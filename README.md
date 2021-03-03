@@ -10,4 +10,6 @@ Odin Project Google Homepage
     Understand how to use classes and ids to target CSS at specific elements on the page
     Build a very basic form (even if it doesn’t “go” anywhere)
 
-Are the main targets before starting the project. Here is what I learned:
+Are the main targets before starting the project.
+
+Turns out that not much soaked in from freecodecamp. While this is frustrating, I won't let this discourage me from continuing with the project. My plan is to do what I can, go through freecodecamp again, then fix what I haven't learned. I will also go through the optional projects until I understand what I'm doing fully.
