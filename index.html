@@ -1,49 +1,108 @@
 <!DOCTYPE html>
 <html>
   <style>
-    header {
-      /* stick to top of page */
+    body {
+      font-size: 13px;
+      font-family: sans-serif, monospace;
+      margin: 0px;
+      padding: 0px;
+    }
+    nav {
+      display: flex;
+    }
+    #search {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    a {
+      margin: 10px 10px 10px 10px;
+      color: black;
+      text-decoration: none;
     }
     a:hover {
-      /* underline */
+      text-decoration: underline;
     }
-    footer {
-      /*stick to bottom of page*/
-      background-color: rgb(231, 231, 231);
+    .navbottomlinks {
+      color: rgb(97, 97, 97);
     }
-    
+    .searchnav {
+      padding: 20px;
+      border-style: solid;
+      border: black;
+    }
+    #topnav {
+      margin: 10px 10px 10px 10px;
+    }
+    #bottomnav {
+      background-color: rgb(241, 241, 241);
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+    .navleft {
+      display: flex;
+      justify-content: flex-start;
+    }
+    .navright {
+      display: flex;
+      justify-content: right;
+      position: absolute;
+      right: 10px;
+    }
+    #signinbutton {
+      color: white;
+      background-color: dodgerblue;
+      padding: 0px 25px 0px 25px;
+      font-size: 15px;
+      margin-right: 10px;
+      border-radius: 5px;
+    }
+    #signinbutton:hover {
+      background-color: rgb(98, 205, 255);
+      transition-duration: 200ms;
+      transform: scale(1.05);
+    }
   </style>
   <head>
-    <title>Google Search Engine</title>
+    <title>Google</title>
   </head>
   <body>
-    <header>
-      <!-- right side -->
-      <a href="#">About</a>
-      <a href="#">Store</a>
-      <!-- left side -->
-      <a href="#">Gmail</a>
-      <a href="#">Images</a>
-      <!-- img -->
-      <a href="#">Sign in</a>
-    </header>
-    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
-    <form>
-      <input type="text" />
-    </form>
-    <a href="#">Google Search</a>
-    <a href="#">I'm Feeling Lucky</a>
-    <footer>
-      <!-- left -->
-      <a href="#">Advertising</a>
-      <a href="#">Business</a>
-      <a href="#">How Search works</a>
-      <!-- middle -->
-      <a href="#">Carbon neutral since 2007</a>
-      <!-- right -->
-      <a href="#">Privacy</a>
-      <a href="#">Terms</a>
-      <a href="#">Settings</a>
-    </footer>
+    <nav id="topnav">
+      <div class="navleft">
+        <a href="#">About</a>
+        <a href="#">Store</a>
+      </div>
+      <div class="navright">
+        <a href="#">Gmail</a>
+        <a href="#">Images</a>
+        <!-- img -->
+        <button id="signinbutton" href="#">Sign in</button>
+      </div>
+    </nav>
+    <div id="search">
+      <img
+        src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+        alt="Google Logo"
+      />
+      <form action="#">
+        <input type="text" />
+      </form>
+      <a href="#" class="searchnav">Google Search</a>
+      <a href="#" class="searchnav">I'm Feeling Lucky</a>
+    </div>
+    <nav id="bottomnav">
+      <div class="navleft">
+        <a href="#" class="navbottomlinks">Advertising</a>
+        <a href="#" class="navbottomlinks">Business</a>
+        <a href="#" class="navbottomlinks">How Search works</a>
+      </div>
+      <a href="#" class="navbottomlinks">Carbon neutral since 2007</a>
+      <div class="navright">
+        <a href="#" class="navbottomlinks">Privacy</a>
+        <a href="#" class="navbottomlinks">Terms</a>
+        <a href="#" class="navbottomlinks">Settings</a>
+      </div>
+    </nav>
   </body>
 </html>

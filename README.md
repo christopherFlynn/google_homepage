@@ -13,3 +13,7 @@ Odin Project Google Homepage
 Are the main targets before starting the project.
 
 Turns out that not much soaked in from freecodecamp. While this is frustrating, I won't let this discourage me from continuing with the project. My plan is to do what I can, go through freecodecamp again, then fix what I haven't learned. I will also go through the optional projects until I understand what I'm doing fully.
+
+Now I've spent some time Googling issues, reviewing what I have learned, and testing out code using live server and developer tools. Only cheated a little to see how google made their bottom text gray and their top text black when they used anchor for all of the tags, turns out they just made a class and applied it to seven separate anchors.
+
+TODO: Center search content and bottom nav bar
