@@ -3,7 +3,7 @@
   <style>
     body {
       font-size: 13px;
-      font-family: sans-serif, monospace;
+      font-family: arial, sans-serif, monospace;
       margin: 0px;
       padding: 0px;
     }
@@ -12,8 +12,8 @@
     }
     #search {
       display: flex;
-      justify-content: center;
       align-items: center;
+      flex-direction: column;
     }
     a {
       margin: 10px 10px 10px 10px;
@@ -27,9 +27,18 @@
       color: rgb(97, 97, 97);
     }
     .searchnav {
-      padding: 20px;
-      border-style: solid;
-      border: black;
+      display: inline-flex;
+      font-size: 15px;
+      margin: 10px;
+      flex-direction: row;
+    }
+    .searchbutton {
+      padding: 10px;
+      border: 1px solid transparent;
+      border-radius: 10px;
+    }
+    .searchbutton:hover {
+      border: 1px lightgray solid;
     }
     #topnav {
       margin: 10px 10px 10px 10px;
@@ -52,16 +61,28 @@
     }
     #signinbutton {
       color: white;
-      background-color: dodgerblue;
+      background-color: rgb(0, 128, 255);
       padding: 0px 25px 0px 25px;
       font-size: 15px;
-      margin-right: 10px;
+      margin: 0px 10px 0px 20px;
+      border: transparent;
       border-radius: 5px;
     }
     #signinbutton:hover {
-      background-color: rgb(98, 205, 255);
+      background-color: rgb(50, 190, 255);
       transition-duration: 200ms;
       transform: scale(1.05);
+    }
+    #searchbar {
+      width: 500px;
+      padding: 8px 20px 8px 20px;
+      font-size: 15px;
+      border: 1px lightgray solid;
+      border-radius: 20px;
+      outline: none;
+    }
+    #searchbar:hover {
+      box-shadow: 1px;
     }
   </style>
   <head>
@@ -82,14 +103,17 @@
     </nav>
     <div id="search">
       <img
+        style="margin: 30px"
         src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
         alt="Google Logo"
       />
       <form action="#">
-        <input type="text" />
+        <input id="searchbar" type="text" />
       </form>
-      <a href="#" class="searchnav">Google Search</a>
-      <a href="#" class="searchnav">I'm Feeling Lucky</a>
+      <div class="searchnav">
+        <a href="#" class="searchbutton">Google Search</a>
+        <a href="#" class="searchbutton">I'm Feeling Lucky</a>
+      </div>
     </div>
     <nav id="bottomnav">
       <div class="navleft">

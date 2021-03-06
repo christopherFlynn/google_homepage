@@ -17,3 +17,5 @@ Turns out that not much soaked in from freecodecamp. While this is frustrating, 
 Now I've spent some time Googling issues, reviewing what I have learned, and testing out code using live server and developer tools. Only cheated a little to see how google made their bottom text gray and their top text black when they used anchor for all of the tags, turns out they just made a class and applied it to seven separate anchors.
 
 TODO: Center search content and bottom nav bar
+
+Retiring project for now, spending too much time bugfixing problems which aren't currently relevant. Happy with how far I came though.
